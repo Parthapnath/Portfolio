@@ -36,6 +36,7 @@ function style(){
         me.style.color="black";
         ph.style.color="black";
         about.style.color="black"
+        gear.style.transform="rotate(120deg)";
 
     }
 }
@@ -44,7 +45,8 @@ function style2(){
         body.style.backgroundColor="rgb(14, 17, 51)"
         me.style.color="white";
         ph.style.color="white";
-        about.style.color="white"
+        about.style.color="white";
+        gear.style.transform="rotate(240deg)";
     }
 }
 gear.addEventListener("click",()=>{
@@ -53,3 +55,10 @@ gear.addEventListener("click",()=>{
 gear.addEventListener("dblclick",()=>{
     style2();
 })
+var sidemenu = document.getElementById("sidemenu");
+function openmenu(){
+    sidemenu.style.right = "0px";
+}
+function closemenu(){
+    sidemenu.style.right = "-200px";
+}
